@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" charset="utf-8" ng-app="portfolio">
+  <head>
+    <title>Tanner Heffner's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  </head>
+  <body>
+<!-- logo -->
+  <div class="site_header">
+		<div class="header_image">
+
+	    <a href="http://tannerheffner.net" rel="show_index">
+				<img src="img/iconb.png"  height="107" width="126"  />
+			</a>
+
+		</div>
+	</div>
+
+<!-- navbar -->
+  <div class="navigation">
+    <div id="autopagination_wrapper">
+      <ul class="list" data-view="Navigation" data-set="Navigation">
+
+        <li class="project_link">
+          <a ui-sref="triangle">
+            triangle determinator
+          </a>
+        </li>
+
+        <li class="project_link">
+          <a ui-sref="rps">
+            rock paper scissors
+          </a>
+        </li>
+
+        <li class="project_link">
+          <a ui-sref="square">
+            follow the square
+          </a>
+        </li>
+
+        <li class="link_link">
+          <a target="_blank" href="https://github.com/tjheffner?tab=repositories">
+            github
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+<!-- content -->
+  <div class="container">
+    <div ui-view></div>
+  </div>
+
+
+
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+
+  </body>
+</html>
